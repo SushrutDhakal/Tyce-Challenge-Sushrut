@@ -1,4 +1,5 @@
 // Import the functions you need from the SDKs you need
+require('dotenv').config();
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
@@ -9,13 +10,13 @@ import { collection, addDoc } from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDmujfordKr-OpzcV-wApv_YfuITS86wz8",
-  authDomain: "tyce-project.firebaseapp.com",
-  projectId: "tyce-project",
-  storageBucket: "tyce-project.firebasestorage.app",
-  messagingSenderId: "768255625746",
-  appId: "1:768255625746:web:030554f0271ec540f9a6cb",
-  measurementId: "G-DN94RPQ561"
+  apiKey: process.env.VITE_FIREBASE_API_KEY,
+  authDomain: VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: VITE_FIREBASE_PROJECT_ID,
+  storageBucket: VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: VITE_FIREBASE_APP_ID,
+  measurementId: VITE_FIREBSAE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
