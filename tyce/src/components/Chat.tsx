@@ -6,7 +6,7 @@ import Sidebar from './Sidebar';
 import axios from 'axios';
 import { FaArrowCircleUp } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
-import logo from './assets/logo.png';
+import logo from '../assets/logo.png';
 import '../styles/chat.css';
 import { v4 as uuidv4 } from 'uuid'; // Import UUID for session tracking
 

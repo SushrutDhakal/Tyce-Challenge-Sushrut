@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './assets/logo.png';
+import logo from '../assets/logo.png';
 import { IoMdAdd } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
 import { CiFileOn } from "react-icons/ci";

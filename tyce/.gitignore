@@ -48,3 +48,4 @@ coverage/
 .firebase/
 firestore.indexes.json
 firestore.rules
+src/firebase-config.js
