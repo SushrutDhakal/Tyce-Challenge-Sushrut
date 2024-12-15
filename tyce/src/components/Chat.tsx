@@ -116,7 +116,7 @@ const Chat: React.FC = () => {
                   <img className="tyce" src={logo} alt="logo" />
                 )}
               </div>
-              <span>{message.text}</span>
+              <span dangerouslySetInnerHTML={{ __html: message.text }} />
             </div>
           ))}
         </div>
@@ -133,8 +133,6 @@ const Chat: React.FC = () => {
             <button type="submit" className="send-button"><FaArrowCircleUp /></button>
           </form>
         </div>
-
-        <button onClick={handleBackToMain} className="back-button">Back to Main</button>
       </div>
     </div>
   );
