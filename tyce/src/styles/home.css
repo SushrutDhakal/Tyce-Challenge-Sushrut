@@ -1,0 +1,282 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Helvetica', sans-serif;
+  background-color: #f9f9f9;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4em;
+  width: 100vw;
+  margin: none;
+  padding: none;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.title {
+  font-size: 1em;
+}
+
+.logo {
+  margin-top: 1.5em;
+  width: 120px;
+  height: 100px;
+  align-items: center;
+}
+
+.greeting-container {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+
+.greeting-container h3 {
+  margin-top: 3em;
+}
+
+.preset-button-container {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5em; 
+}
+
+.preset-button-container button {
+  background-color: #383838;
+  color: white;
+  border-radius: 5px;
+  width: 22%;
+  border: none;
+  height: 2.5em;
+  font-size: 1em;
+  font-weight: bold;
+  box-shadow: 0 5px 10px -2px rgb(131, 131, 131);
+}
+
+.preset-button-container button:hover {
+  cursor: pointer;
+}
+
+.chatbot-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 10em;
+}
+
+.intial-prompt {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  height: 60%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.intial-prompt .prompt{
+  width: 95%;
+  border: none;
+  padding: 0.5em;
+}
+
+.prompt .submit-chat {
+  border: none;
+  background-color: transparent;
+  color: gray;  
+  position: absolute;
+  left: 140.5vh;
+  top: 51vh;
+}
+
+.textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  border: none;
+  background-color: transparent;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1em;
+  color: gray;
+}
+
+.textarea::placeholder{
+  color: rgb(170, 170, 170);
+}
+
+.textarea:focus {
+  outline: none;
+  border: none
+}
+
+.upload-files {
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  width: 98%;
+  height: 35%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.upload-files.has-files {
+  border-radius: none;
+}
+
+.upload-files.no-files {
+  border-radius: 0 0 10px 10px;
+}
+
+.file-upload-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.file-upload-form label {
+  width: 100%;
+  color: gray;
+  text-align: left;
+  font-size: 0.8em;
+  display: block;
+  margin-left: 1.5em;
+  font-weight: lighter;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.file-upload-form .paperclip {
+  border: none;
+  background-color: #e0e0e0;
+  margin-right: 0.5em;
+  color: gray;
+}
+
+.uploaded-files-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 97.8%;
+  background-color: #e0e0e0;
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.file-icon {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.file-name {
+  flex: 1;
+  color: gray;
+  font-size: 0.8em;
+  word-break: break-all;
+}
+
+.uploaded-file {
+  margin-left: 1em;
+  display: flex;
+  align-items: center;
+  width: 93%;
+  margin-left: 1em;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-top: 1px solid rgb(207, 207, 207);
+}
+
+.uploaded-file:last-child {
+  border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.delete-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: gray;
+  text-decoration: underline;
+}
+
+
+
+.deals-intro {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  text-align: left;
+  margin-top: 8em;
+}
+
+.deals-intro button{
+  margin-left: 2em;
+  font-size: 1em;
+  background-color: #f9f9f9;
+  border: none;
+}
+
+.deals-intro button:hover{
+  cursor: pointer;
+}
+
+.deals-container {
+  display: flex;
+  justify-content: space-between;
+  width: 48%;
+  height: 9.5em;
+}
+
+.deals-container .deal-card {
+  border: 1.5px solid #e0e0e0;
+  border-radius: 10px;
+  width: 27%;
+  background-color: #f7f7f7;
+  padding: 1em;
+}
+
+.deal-card .center-info{
+  display: flex;
+  justify-content: space-between;
+  height:40%;
+  margin-top: 1em;
+}
+
+.center-info .inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  width: 45%;
+  font-weight: bold;
+}
+
+.center-info .inner h5, 
+.center-info .inner h6 {
+  margin: 0;
+  font-weight: lighter;
+}
+
+.center-info .inner h5 {
+  font-weight: bold;
+}
+
+.deal-industry h5{
+  background-color: #e0e0e0;
+  border-radius: 7px;
+  text-align: center;
+  margin: 1em 0 1em 0;
+  padding: 0.5em 0 0.5em 0;
+}

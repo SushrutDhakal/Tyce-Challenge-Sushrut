@@ -1,0 +1,50 @@
+# Node modules
+node_modules/
+tyce-backend/node_modules/
+
+# Environment variables
+tyce-backend/.env
+
+# Build output directories
+dist/
+build/
+out/
+.tyce/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Vite output
+.vite/
+
+# Logs
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+lerna-debug.log
+
+# Dependency lockfiles
+package-lock.json
+
+# IDE/Editor settings
+.vscode/
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+# Mac system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+desktop.ini
+
+# Coverage
+coverage/
+*.lcov
+
+# Firebase-related
+.firebase/
+firestore.indexes.json
+firestore.rules

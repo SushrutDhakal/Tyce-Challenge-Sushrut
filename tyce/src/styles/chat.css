@@ -1,0 +1,91 @@
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .chat-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 5em;
+  }
+  
+  .conversation-window {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 15px;
+    background-color: #f9f9f9;
+    margin-bottom: 5em;
+    height: 50vh;
+    width: 60%;
+    margin-top: 3em;
+  }
+  
+  .message {
+    display: flex;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 1em;
+    width: 90%;
+    line-height: 1.4;
+  }
+  
+  .message.user {
+    background-color: #eae9e9;
+    align-self: flex-end;
+  }
+  
+  .tyce-message {
+    background-color: #f1f1f1;
+    align-self: flex-start;
+  }
+
+  .sender-info .tyce{
+    width: 40px;
+    margin-right: 1.5em;
+  }
+
+  .sender-info .user{
+    font-size: 28px;
+    margin-left: 0.2em;
+    margin-right: 1.5em;
+  }
+
+
+  .input-container{
+    display: flex;
+    justify-content: center;
+    width: 62%;
+  }
+  
+  .input-form {
+    margin-bottom: 5em;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border: none;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1em;
+    resize: none;
+  }
+  
+  .send-button {
+    border: none;
+    background-color: transparent;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,39 @@
+
+.sidebar-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 3em;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0 1em;
+    border-right: 2px solid #e0e0e0;
+  }
+  
+  .sidebar-logo {
+    width: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .sidebar-container svg {
+    font-size: 20px;
+    margin: 15px 0;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .sidebar-container svg:nth-child(2) {
+    background-color: #f1f1f1;
+    width: 60%;
+    border-radius: 5px;
+  }
+  
+  .sidebar-container svg:last-child {
+    margin-top: auto;
+    margin-bottom: 9vh;
+    font-size: 28px;
+  }
